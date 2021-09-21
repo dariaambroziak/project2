@@ -7,8 +7,8 @@ body {
 }
 
 .gsm-hama h2, .gsm-hama p {
-  padding-left: 75px;
-  padding-right: 15px;
+  padding-left: 4rem;
+  padding-right: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -19,22 +19,22 @@ body {
 }
 
 .gsm-hama p {
-  font-size: 1.4vw;
-  line-height: 1.6vw;
+  font-size: 1.7vw;
+  line-height: 2.1vw;
   font-weight: 300;
 }
 
 @media (max-width: 767px) {
   .gsm-hama p {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: 1350px) {
   .gsm-hama p {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 28px;
   }
 }
 
@@ -45,7 +45,7 @@ body {
 
 @media (max-width: 767px) {
   .gsm-hama h2 {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 
@@ -63,6 +63,12 @@ body {
 
 @media (max-width: 767px) {
   .gsm-hama .desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .gsm-hama .SMdesktop {
     display: none !important;
   }
 }
@@ -93,23 +99,21 @@ body {
   background: #EF0C39;
   color: #FFFFFF;
   font-weight: 300;
-  padding: 1.4rem 3.4rem;
+  padding: .8vw 3.2vw;
+  font-size: 25px;
   border-radius: 30px;
 }
 
 @media (max-width: 767px) {
   .gsm-hama .button--primary {
-    background: #EF0C39;
-    color: #FFFFFF;
     font-size: 14px;
-    font-weight: 300;
     padding: .35rem 1.5rem;
     border-radius: 30px;
   }
 }
 
 .gsm-hama .button--primary:hover {
-  color: #FFFFFF;
+  opacity: .7;
   box-shadow: 0 5px 25px 0 rgba(239, 12, 57, 0.35);
 }
 
@@ -117,7 +121,8 @@ body {
   background: #FFFFFF;
   color: #c4002e;
   font-weight: 300;
-  padding: 1.4rem 3.4rem;
+  padding: .8vw 3.2vw;
+  font-size: 25px;
   border-radius: 30px;
 }
 
@@ -126,14 +131,13 @@ body {
     background: #fff;
     color: #c4002e;
     font-size: 14px;
-    font-weight: 300;
     padding: .35rem 1.5rem;
     border-radius: 30px;
   }
 }
 
 .gsm-hama .button--white:hover {
-  color: #FFFFFF;
+  opacity: .7;
   box-shadow: 0 5px 25px 0 rgba(239, 12, 57, 0.35);
 }
 
@@ -342,57 +346,24 @@ body {
 }
 
 .gsm-hama .header .logo {
-  height: 35px;
   width: 135px;
-  border: 1px solid red;
 }
 
 .gsm-hama .slider {
   max-width: 1350px;
-}
-
-.gsm-hama .slider ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-.gsm-hama .slider__images {
-  opacity: 0;
-  visibility: hidden;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  list-style-type: none;
-  transition: opacity .4s ease-in, visibility .4s ease-in;
-}
-
-.gsm-hama .slider__images.loaded {
-  opacity: 1;
-  visibility: visible;
-}
-
-.gsm-hama .slider__images-item {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  height: auto;
   width: 100%;
-}
-
-.no-js .gsm-hama .slider__images-item:first-of-type {
+  max-height: 670px;
   position: relative;
-}
-
-.no-js .gsm-hama .slider__images-item:not(:first-of-type) {
-  display: none !important;
 }
 
 .gsm-hama .slider__images-image {
-  display: block;
+  width: 100%;
 }
 
 .gsm-hama .slider__images-title {
   position: absolute;
-  top: 40%;
+  top: 20%;
   color: #FFFFFF;
   font-weight: 300;
   display: flex;
@@ -435,12 +406,6 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .gsm-hama .nav .col-md-1 {
-    width: 14.28%;
-  }
-}
-
 .gsm-hama .nav__images {
   list-style: none;
   padding: 0;
@@ -461,16 +426,37 @@ body {
   }
 }
 
+.gsm-hama .nav__images-item a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.gsm-hama .nav__images-item a img {
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.gsm-hama .nav__images-item a:hover {
+  cursor: pointer;
+}
+
+.gsm-hama .nav__images-item a:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  z-index: 0;
+}
+
 .gsm-hama .nav__images-image {
-  height: auto;
-  max-height: 100px;
-  max-width: 100px;
+  height: 100px;
+  width: auto;
 }
 
 @media (max-width: 767px) {
   .gsm-hama .nav__images-image {
-    max-height: 29px;
-    max-width: 29px;
+    height: 10vw;
+    width: auto;
   }
 }
 
@@ -486,7 +472,7 @@ body {
 
 .gsm-hama .nav__images p {
   padding: 0;
-  margin: 1rem 0 0;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -553,9 +539,37 @@ body {
 
 .gsm-hama .offer__images-icon {
   position: absolute;
+  right: -10%;
   bottom: 0;
-  right: 0;
-  width: 50%;
+  max-height: 60%;
+}
+
+@media (max-width: 767px) {
+  .gsm-hama .offer__images-icon {
+    max-height: 170px;
+    max-width: 40%;
+    right: 0;
+    right: calc(50% - 160px);
+  }
+}
+
+.gsm-hama .offer__images-certificate {
+  width: 50vw;
+  max-width: 670px;
+  padding: 2rem 8rem 6rem 0;
+  height: auto;
+  max-height: 670px;
+}
+
+@media (max-width: 767px) {
+  .gsm-hama .offer__images-certificate {
+    width: auto;
+    padding: 0;
+    max-height: 200px;
+    position: absolute;
+    bottom: calc(50% - 100px);
+    left: calc(50% - 140px);
+  }
 }
 
 .gsm-hama .loader-black {
@@ -577,7 +591,7 @@ body {
 }
 
 .gsm-hama .loader__content, .gsm-hama .quick-loader__content {
-  height: 45vw;
+  height: 48vw;
   max-height: 670px;
   position: relative;
 }
@@ -590,7 +604,13 @@ body {
 
 .gsm-hama .loader .button, .gsm-hama .quick-loader .button {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3.5rem;
+}
+
+@media (max-width: 767px) {
+  .gsm-hama .loader .button, .gsm-hama .quick-loader .button {
+    bottom: 2rem;
+  }
 }
 
 .gsm-hama .loader__images, .gsm-hama .quick-loader__images {
@@ -606,7 +626,7 @@ body {
 .gsm-hama .loader__images-item, .gsm-hama .quick-loader__images-item {
   display: flex;
   width: 100%;
-  height: 45vw;
+  height: 100%;
   max-height: 670px;
 }
 
@@ -761,43 +781,65 @@ body {
 }
 
 .gsm-hama .contact__content {
-  padding: 1rem 15% 6rem 33%;
+  padding: 1rem 10% 6rem 33%;
 }
 
 @media (max-width: 576px) {
   .gsm-hama .contact__content {
-    color: #414141;
+    height: 320px;
     padding: 0 0 3rem;
   }
 }
 
+.gsm-hama .contact__content-tel {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .gsm-hama .contact__content-tel {
+    margin-top: 2.2rem;
+  }
+}
+
 .gsm-hama .contact__content-tel .icon {
-  max-height: 48px;
-  padding-left: 75px;
+  height: 72px;
+  padding: 4px 1rem 4px 4rem;
 }
 
 @media (max-width: 767px) {
   .gsm-hama .contact__content-tel .icon {
-    padding-left: 30px;
+    padding: 0 .8rem 0 30px;
+    height: 54px;
   }
 }
 
 .gsm-hama .contact__content-tel p {
-  margin: 4px;
-  padding-left: 0;
-  font-weight: bold;
+  padding: .3rem 0;
+  margin: 0;
 }
 
-.gsm-hama .contact__content-tel p:first-child {
-  font-size: 1.4rem;
-  font-weight: 400;
+.gsm-hama .contact__content-tel p a {
+  margin: 4px;
+  padding-left: 0;
   color: #EF0C39;
+  text-decoration: none;
+}
+
+.gsm-hama .contact__content-tel p a:first-child {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+@media (max-width: 767px) {
+  .gsm-hama .contact__content-tel p a:first-child {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .gsm-hama .contact__content-tel p .gray {
   color: #414141;
-  opacity: .7;
-  font-size: .8rem;
+  opacity: .9;
 }
 
 @media (max-width: 576px) {
