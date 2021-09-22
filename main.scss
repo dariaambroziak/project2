@@ -35,12 +35,17 @@ body {
   h2 {
     font-weight: 100;
     font-size: 4.2vw;
-      @media (max-width: 767px) {
-        font-size: 28px;
-      }
-      @media (min-width: 1350px) {
-        font-size: 60px;
-      }
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+    @media (min-width: 1350px) {
+      font-size: 60px;
+    }
+  }
+  .h2-small {
+    @media (max-width: 576px) {
+      font-size: 23px;
+    }
   }
 
   .mobile {
@@ -73,30 +78,35 @@ body {
     @media (max-width: 767px) {
       margin-left: 30px;
       margin-right: 30px;
+      transition: none;
     }
     &--primary {
-        background: $primary;
-        color: $white;
+        background: #EF0C39;
+        color: #fff;
         font-weight: 300;
-        padding: .8vw 3.2vw;
-        font-size: 25px;
+        padding: .6vw 2.5vw;
+        font-size: 1.7vw;
         border-radius: 30px;
         @media (max-width: 767px) {
           font-size: 14px;
           padding: .35rem 1.5rem;
           border-radius: 30px;
         }
+        @media (min-width: 1350px) {
+          font-size: 25px;
+          padding: 13px 30px;
+        }
         &:hover {
           opacity: .7;
-          box-shadow: 0 5px 25px 0 rgba($primary, 0.35);
+          box-shadow: 0 5px 25px 0 rgba(#EF0C39, 0.35);
         }
     }
     &--white {
       background: $white;
       color: #c4002e;
       font-weight: 300;
-      padding: .8vw 3.2vw;
-      font-size: 25px;
+      padding: .6vw 2.5vw;
+      font-size: 1.7vw;
       border-radius: 30px;
       @media (max-width: 767px) {
         background: #fff;
@@ -104,6 +114,10 @@ body {
         font-size: 14px;
         padding: .35rem 1.5rem;
         border-radius: 30px;
+      }
+      @media (min-width: 1350px) {
+        font-size: 25px;
+        padding: 13px 30px;
       }
       &:hover {
         opacity: .7;
@@ -253,6 +267,7 @@ body {
   img {
     max-width: 100%;
     width: 100%;
+    max-height: 670px;
   }
 
   .slider {
@@ -342,13 +357,18 @@ body {
   .certificate {
     padding-left: 75px;
     position: absolute;
-    bottom: 0;
+    bottom: 2.5rem;
     @media (max-width: 767px) {
       padding-left: 30px;
       bottom: 2rem;
     }
     img {
-      height: 3rem;
+      height: 90px;
+      width: 293px;
+      @media (max-width: 767px) {
+        height: 43px;
+        width: 140px;
+      }
     }
   }
   h2 {
@@ -402,9 +422,21 @@ body {
 }
 .loader-gray {
   background-color: #F2F2F2;
+  @media (min-width: 768px) {
+    background-image: url(images/1350-Akcesoria-GSM/img-5.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .loader-darkgray{
   background-color: #b5b5b5;
+  @media (min-width: 768px) {
+    background-image: url(images/1350-Akcesoria-GSM/img-8.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .loader-red {
   background-color: #c4002e;
