@@ -159,6 +159,12 @@ body {
   box-shadow: 0 5px 25px 0 rgba(239, 12, 57, 0.35);
 }
 
+.gsm-hama input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .gsm-hama .container {
   max-width: 1350px;
   margin: 0 auto;
