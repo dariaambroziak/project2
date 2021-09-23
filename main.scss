@@ -261,8 +261,9 @@ body {
         font-size: 4.5vw;
       }
       @media (min-width: 1351px) {
-        font-size: 60px;
-        top: 276px
+        font-size: 48px;
+        line-height: 63px;
+        top: 250px;
       }
      
     }
@@ -361,7 +362,7 @@ body {
     bottom: 2rem;
   }
   .certificate {
-    padding-left: 75px;
+    padding-left: 4rem;
     position: absolute;
     bottom: 2.5rem;
     @media (max-width: 767px) {
@@ -369,10 +370,12 @@ body {
       bottom: 2rem;
     }
     img {
-      height: 90px;
-      width: 293px;
+      width: 22vw;
+      height: auto;
+      max-height: 90px;
+      max-width: 293px;
       @media (max-width: 767px) {
-        height: 43px;
+        height: auto;
         width: 140px;
       }
     }
@@ -419,6 +422,24 @@ body {
         bottom: calc(50% - 100px);
         left: calc(50% - 140px);
       }
+    }
+    .img-1 {
+      background-image: url(images/1350-Akcesoria-GSM/img-2.png);
+      height: 45vw;
+      max-height: 670px;
+      min-height: 320px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .img-7 {
+      background-image: url(images/1350-Akcesoria-GSM/img-7.png);
+      height: 45vw;
+      max-height: 670px;
+      min-height: 320px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
     }
   }
 }
@@ -585,16 +606,21 @@ body {
 
 
 .contact {
-  background-image: url(images/1350-Akcesoria-GSM/img-10.png);
-  background-size: cover;
-  @media (max-width: 576px) {
-    background-image: none;
-  }
   &__content {
-    padding: 1rem 10% 6rem 33%;
+    background-image: url(images/1350-Akcesoria-GSM/img-10.png);
+    background-size: cover;
+    background-position: left bottom;
+    padding: 1rem 10% 10rem 33%;
     @media (max-width: 576px) {
       height: 320px;
       padding: 0 0 3rem;
+      background-image: none;
+    }
+    @media (min-width: 577px) and (max-width: 767px){
+      padding: 1rem 10% 6rem 33%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+      padding: 1rem 10% 6rem 33%;
     }
     &-tel {
       display: flex;
@@ -603,11 +629,12 @@ body {
       }
       .icon {
         height: 72px;
-        padding: 4px 1rem 4px 4rem;
+        padding: 5px .4rem 15px 4rem;
         @media (max-width: 767px) {
           padding: 0 .8rem 0 30px;
           height: 54px;
         }
+        
       }
       p {
         padding: .3rem 0;

@@ -403,8 +403,9 @@ body {
 
 @media (min-width: 1351px) {
   .gsm-hama .slider__images-title {
-    font-size: 60px;
-    top: 276px;
+    font-size: 48px;
+    line-height: 63px;
+    top: 250px;
   }
 }
 
@@ -523,7 +524,7 @@ body {
 }
 
 .gsm-hama .offer .certificate {
-  padding-left: 75px;
+  padding-left: 4rem;
   position: absolute;
   bottom: 2.5rem;
 }
@@ -536,13 +537,15 @@ body {
 }
 
 .gsm-hama .offer .certificate img {
-  height: 90px;
-  width: 293px;
+  width: 22vw;
+  height: auto;
+  max-height: 90px;
+  max-width: 293px;
 }
 
 @media (max-width: 767px) {
   .gsm-hama .offer .certificate img {
-    height: 43px;
+    height: auto;
     width: 140px;
   }
 }
@@ -603,6 +606,26 @@ body {
     bottom: calc(50% - 100px);
     left: calc(50% - 140px);
   }
+}
+
+.gsm-hama .offer__images .img-1 {
+  background-image: url(images/1350-Akcesoria-GSM/img-2.png);
+  height: 45vw;
+  max-height: 670px;
+  min-height: 320px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.gsm-hama .offer__images .img-7 {
+  background-image: url(images/1350-Akcesoria-GSM/img-7.png);
+  height: 45vw;
+  max-height: 670px;
+  min-height: 320px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .gsm-hama .loader-black {
@@ -820,25 +843,30 @@ body {
   }
 }
 
-.gsm-hama .contact {
+.gsm-hama .contact__content {
   background-image: url(images/1350-Akcesoria-GSM/img-10.png);
   background-size: cover;
-}
-
-@media (max-width: 576px) {
-  .gsm-hama .contact {
-    background-image: none;
-  }
-}
-
-.gsm-hama .contact__content {
-  padding: 1rem 10% 6rem 33%;
+  background-position: left bottom;
+  padding: 1rem 10% 10rem 33%;
 }
 
 @media (max-width: 576px) {
   .gsm-hama .contact__content {
     height: 320px;
     padding: 0 0 3rem;
+    background-image: none;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .gsm-hama .contact__content {
+    padding: 1rem 10% 6rem 33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gsm-hama .contact__content {
+    padding: 1rem 10% 6rem 33%;
   }
 }
 
@@ -854,7 +882,7 @@ body {
 
 .gsm-hama .contact__content-tel .icon {
   height: 72px;
-  padding: 4px 1rem 4px 4rem;
+  padding: 5px .4rem 15px 4rem;
 }
 
 @media (max-width: 767px) {
