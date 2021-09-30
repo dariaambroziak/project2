@@ -6,7 +6,7 @@ $primary: #EF0C39;
 $primaryLight: #FC6C6D;
 
 
-.lp-h-gsm {
+.lp-hama-gsm {
   @media (max-width: 767px) {
     margin: 0 -8px;
   }
@@ -453,7 +453,7 @@ $primaryLight: #FC6C6D;
       }
     }
     .img-1 {
-      background-image: url(images/1350-Akcesoria-GSM/img-2.png);
+      background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-2.png);
       height: 45vw;
       max-height: 670px;
       min-height: 320px;
@@ -462,7 +462,7 @@ $primaryLight: #FC6C6D;
       background-position: center;
     }
     .img-7 {
-      background-image: url(images/1350-Akcesoria-GSM/img-7.png);
+      background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-7.png);
       height: 45vw;
       max-height: 670px;
       min-height: 320px;
@@ -479,7 +479,7 @@ $primaryLight: #FC6C6D;
 .loader-gray {
   background-color: #F2F2F2;
   @media (min-width: 768px) {
-    background-image: url(images/1350-Akcesoria-GSM/img-5.png);
+    background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-5.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -488,7 +488,7 @@ $primaryLight: #FC6C6D;
 .loader-darkgray{
   background-color: #b5b5b5;
   @media (min-width: 768px) {
-    background-image: url(images/1350-Akcesoria-GSM/img-8.png);
+    background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-8.png);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -513,7 +513,7 @@ $primaryLight: #FC6C6D;
     position: absolute;
     bottom: 3.5rem;
     @media (max-width: 767px) {
-      bottom: 2rem;
+      bottom: 1.2rem;
     }
   }
   &__images {
@@ -636,7 +636,7 @@ $primaryLight: #FC6C6D;
 
 .contact {
   &__content {
-    background-image: url(images/1350-Akcesoria-GSM/img-10.png);
+    background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-10.png);
     background-size: cover;
     background-position: left bottom;
     padding: 1rem 10% 10rem 33%;
@@ -691,7 +691,7 @@ $primaryLight: #FC6C6D;
   }
   &__mobile {
     @media (max-width: 576px) {
-      background-image: url(images/320-Akcesoria-GSM/img-10.png);
+      background-image: url(images/lp-hama-gsm/320-akcesoria-gsm/img-10.png);
       background-size: cover;
       height: 100vw;
       max-height: 500px;
