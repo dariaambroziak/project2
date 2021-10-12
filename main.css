@@ -3,9 +3,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1049px) {
   .lp-hama-gsm {
-    margin: 0 -8px;
+    margin: 0 -8px -15px;
   }
 }
 
@@ -640,6 +640,14 @@
 .lp-hama-gsm .loader-black {
   background-color: #000;
   color: #FFFFFF;
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 576px) {
+  .lp-hama-gsm .loader-black {
+    display: block;
+  }
 }
 
 .lp-hama-gsm .loader-gray {
@@ -671,6 +679,52 @@
 .lp-hama-gsm .loader-red {
   background-color: #c4002e;
   color: white;
+}
+
+.lp-hama-gsm .quick-loader {
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 576px) {
+  .lp-hama-gsm .quick-loader {
+    display: block;
+  }
+}
+
+.lp-hama-gsm .section-photo {
+  display: flex;
+  align-items: stretch;
+}
+
+@media (max-width: 576px) {
+  .lp-hama-gsm .section-photo {
+    display: block;
+  }
+}
+
+.lp-hama-gsm .section-photo .img6 {
+  background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-6.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .lp-hama-gsm .section-photo .img6 {
+    background-image: url(images/lp-hama-gsm/320-akcesoria-gsm/img-6.png);
+  }
+}
+
+.lp-hama-gsm .section-photo .img7 {
+  background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-7.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .lp-hama-gsm .section-photo .img7 {
+    background-image: url(images/lp-hama-gsm/320-akcesoria-gsm/img-7.png);
+  }
 }
 
 .lp-hama-gsm .loader__content, .lp-hama-gsm .quick-loader__content {
@@ -774,6 +828,30 @@
 
 .lp-hama-gsm .loader .item-3, .lp-hama-gsm .quick-loader .item-3 {
   background-color: #26b099;
+}
+
+.lp-hama-gsm .loader .img3, .lp-hama-gsm .quick-loader .img3 {
+  background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .lp-hama-gsm .loader .img3, .lp-hama-gsm .quick-loader .img3 {
+    background-image: url(images/lp-hama-gsm/320-akcesoria-gsm/img-3.png);
+  }
+}
+
+.lp-hama-gsm .loader .img4, .lp-hama-gsm .quick-loader .img4 {
+  background-image: url(images/lp-hama-gsm/1350-akcesoria-gsm/img-4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .lp-hama-gsm .loader .img4, .lp-hama-gsm .quick-loader .img4 {
+    background-image: url(images/lp-hama-gsm/320-akcesoria-gsm/img-4.png);
+  }
 }
 
 .lp-hama-gsm .products, .lp-hama-gsm .control {
